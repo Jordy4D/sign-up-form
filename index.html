@@ -27,38 +27,41 @@
             </div>
             <div class="form">
                 <form action="post" class="sign-up-form">
-                    <div class="form-row">
-                        <div class="input-and-label" id="first-name">
-                            <label for="first_name">First Name</label>
-                            <input type="text" class="first_name">
+                    <fieldset class="form-input-fields">
+                        <div class="form-row">
+                            <div class="input-and-label" id="first-name">
+                                <label for="first_name">First Name</label>
+                                <input type="text" class="first_name">
+                            </div>
+                            <div class="input-and-label" id="last-name">
+                                <label for="last_name">Last Name</label>
+                                <input type="text" class="last_name">
+                            </div>
                         </div>
-                        <div class="input-and-label" id="last-name">
-                            <label for="last_name">Last Name</label>
-                            <input type="text" class="last_name">
+                        <div class="form-row">
+                            <div class="input-and-label" id="email">
+                                <label for="email">Email</label>
+                                <input type="email" class="email_input">
+                            </div>
+                            <div class="input-and-label" id="phone-number">
+                                <label for="phone_number">Phone Number</label>
+                                <input type="number" class="phone_number">
+                            </div>
                         </div>
-                    </div>
-                    <div class="form-row">
-                        <div class="input-and-label" id="email">
-                            <label for="email">Email</label>
-                            <input type="email" class="email_input">
+                        <div class="form-row">
+                            <div class="input-and-label" id="password">
+                                <label for="password">Password</label>
+                                <input type="text" class="password">
+                            </div>
+                            <div class="input-and-label" id="password-confirm">
+                                <label for="password_confirm">Confrim Password</label>
+                                <input type="text" class="password_confirm">
+                            </div>
                         </div>
-                        <div class="input-and-label" id="phone-number">
-                            <label for="phone_number">Phone Number</label>
-                            <input type="number" class="phone_number">
-                        </div>
-                    </div>
-                    <div class="form-row">
-                        <div class="input-and-label" id="password">
-                            <label for="password">Password</label>
-                            <input type="text" class="password">
-                        </div>
-                        <div class="input-and-label" id="password-confirm">
-                            <label for="password_confirm">Confrim Password</label>
-                            <input type="text" class="password_confirm">
-                        </div>
-                    </div>
-                    <fieldset>
-                        <button class="submit-btn">Create Account</button>
+                    </fieldset>
+
+                    <fieldset class="login-area">
+                        <button class="submit-btn"><p>Create Account</p></button>
                         <p class="already-user">Already Have An Account? <a href="#">Log In</a></p>
                     </fieldset>
                 </form>

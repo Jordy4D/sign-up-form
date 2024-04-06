@@ -1,5 +1,5 @@
-:root {
-  font-family: roboto;
+* {
+  font-family: 'Courier New', Courier, monospace;
   margin: 0;
   padding: 0;
 }
@@ -7,6 +7,8 @@
 .body {
     height: 100%;
     width: 100%;
+    padding: 0;
+    margin: 0;
 }
 
 .main {
@@ -21,7 +23,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    width: 100vw;
+    width: 50vw;
     height: 100vh;
     background-image: url('assets/halie-west-25xggax4bSA-unsplash.jpg');
     background-size: cover;
@@ -54,15 +56,95 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 100vw;
+    width: 70vw;
+}
+
+.formTextArea {
+    padding: 30px;
+}
+
+.form-input-fields {
+    padding: 30px;
+    border: none;
 }
 
 .form-row {
     display: flex;
-    justify-content: space-evenly;
+    /* justify-content: space-evenly; */
+    margin-bottom: 20px;
+    
 }
 
 .input-and-label {
     display: flex;
     flex-direction: column;
+    margin-right: 15%;
+}
+
+.input-and-label label {
+    text-transform: uppercase;
+    font-size: 10px;
+    letter-spacing: 2px;
+    font-weight: 700;
+}
+
+
+input {
+    border: 1px solid #E5E7EB;
+    border-radius: 4px;
+    padding: 4px 2px;
+}
+
+
+
+input:focus {
+    border: 1px solid blue;
+    border-radius: 4px;
+    padding: 4px 2px;
+    outline: none;
+    box-shadow: 0 8px 8px 0 rgba(0,0,0,0.2)
+
+}
+
+.credit-text {
+    color: white;
+    position: absolute;
+    bottom: 5px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.login-area {
+    border: 0; 
+    padding: 0;
+    margin: 0;
+    border-top: 2px solid black;
+    padding-top: 25px;
+    padding-left: 30px;
+    /* position: absolute; */
+}
+
+button.submit-btn {
+    background-color: #596D48;
+    border-radius: 8px;
+    border: 0;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    margin-bottom: 24px;
+}
+
+button.submit-btn:hover,
+button.submit-btn:focus {
+    background-color: #596D48;
+    opacity: 90%;
+    border-radius: 8px;
+    box-shadow: 8px 8px 16px 8px rgba(0,0,0,0.2);
+    outline: none;
+}
+
+.submit-btn p {
+    color: white;
+    font-weight: bold;
+    padding: 12px 36px;
+
 }
