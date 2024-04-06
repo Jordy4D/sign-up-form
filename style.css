@@ -56,3 +56,13 @@
     justify-content: center;
     width: 100vw;
 }
+
+.form-row {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.input-and-label {
+    display: flex;
+    flex-direction: column;
+}
