@@ -60,7 +60,10 @@
 }
 
 .formTextArea {
-    padding: 30px;
+    padding-left: 30px;
+    padding-right: 100px;
+    font-weight: 700;
+    font-size: 18px;
 }
 
 .form-input-fields {
