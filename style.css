@@ -1,7 +1,13 @@
+:root {
+    --form-left-padding: 40px;
+    --green-accent: #596D48
+}
+
 * {
   font-family: 'Courier New', Courier, monospace;
   margin: 0;
   padding: 0;
+  
 }
 
 .body {
@@ -22,7 +28,7 @@
     /* background-color: brown; */
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-between;
     width: 50vw;
     height: 100vh;
     background-image: url('assets/halie-west-25xggax4bSA-unsplash.jpg');
@@ -39,6 +45,7 @@
     justify-content: center;
     align-items: center;
     background-color: rgb(0, 0, 0, .5);
+    margin-top: 15vh;
 }
 
 .odin-logo img {
@@ -60,15 +67,39 @@
 }
 
 .formTextArea {
-    padding-left: 30px;
-    padding-right: 100px;
-    font-weight: 700;
+    padding-left: var(--form-left-padding);
+    padding-right: 15vw;
+    margin-bottom: 10vh;
+}
+
+.formTextArea p {
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 18px;
+    font-weight: 700;
+    
+}
+
+.already-user {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+}
+
+.already-user a {
+    color: var(--green-accent);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#form-legend {
+    font-weight: 700;
 }
 
 .form-input-fields {
-    padding: 30px;
+    padding-left: var(--form-left-padding);
+    padding-top: 30px;
+    padding-bottom: 20px;
     border: none;
+    box-shadow: 0 10px 12px 0px #e1e1e1;
 }
 
 .form-row {
@@ -110,26 +141,36 @@ input:focus {
 }
 
 .credit-text {
-    color: white;
-    position: absolute;
-    bottom: 5px;
     display: flex;
     justify-content: center;
+    
+}
+
+.credit-text p {
+    color: white;
+    font-size: .75em;
+    font-family: Arial, Helvetica, sans-serif !important;
+}
+
+.credit-text a {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif !important;
 
 }
+
 
 .login-area {
     border: 0; 
     padding: 0;
     margin: 0;
-    border-top: 2px solid black;
     padding-top: 25px;
-    padding-left: 30px;
+    padding-left: var(--form-left-padding);
     /* position: absolute; */
+    border-top: 1px solid #E5E7EB;
 }
 
 button.submit-btn {
-    background-color: #596D48;
+    background-color: var(--green-accent);
     border-radius: 8px;
     border: 0;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
@@ -138,7 +179,7 @@ button.submit-btn {
 
 button.submit-btn:hover,
 button.submit-btn:focus {
-    background-color: #596D48;
+    background-color: var(--green-accent);
     opacity: 90%;
     border-radius: 8px;
     box-shadow: 8px 8px 16px 8px rgba(0,0,0,0.2);
