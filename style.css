@@ -140,9 +140,18 @@ input:focus {
 
 }
 
+input:invalid {
+    border: 1px solid red;
+    border-radius: 4px;
+    padding: 4px 2px;
+    outline: none;
+    box-shadow: 0 8px 8px 0 rgba(0,0,0,0.2)
+}
+
 .credit-text {
     display: flex;
     justify-content: center;
+    margin-bottom: 10px;
     
 }
 
